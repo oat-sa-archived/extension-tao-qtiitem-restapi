@@ -24,7 +24,7 @@ return array(
 	'label' => 'QTI Item Rest API',
 	'description' => 'Implementation of the Rest API for the QTI items',
     'license' => 'GPL-2.0',
-    'version' => '0.0.1',
+    'version' => '0.0.2',
 	'author' => 'Open Assessment Technologies SA',
 	'requires' => array(
         'tao' => '>=7.9.0',
@@ -42,7 +42,8 @@ return array(
     ),
     'routes' => array(
         '/taoQtiItemRestApi' => 'oat\\taoQtiItemRestApi\\controller'
-    ),    
+    ),
+    'update' => 'oat\\taoQtiItemRestApi\\scripts\\update\\Updater',
 	'constants' => array(
 	    # views directory
 	    "DIR_VIEWS" => dirname(__FILE__).DIRECTORY_SEPARATOR."views".DIRECTORY_SEPARATOR,
